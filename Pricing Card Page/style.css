@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+body {
+    background-color: #1a1b1d;
+}
+
+.section {
+    margin-top: 50px;
+}
+
+.header {
+    font-family: "Exo 2", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.monthlyCards {
+    margin: auto;
+    width: 100%;
+    height: 700px;
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+}
+
+.yearlyCards {
+    margin: auto;
+    width: 100%;
+    height: 700px;
+    display: none;
+    grid-template-columns: repeat(3,2fr);
+}
+
+.plan {
+    font-family: "Exo 2", sans-serif;
+    color: white;
+    width: 220px;
+    height: 35px;
+    margin: 25px auto; /* Otomatik kenar boşlukları */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    width: 75px;
+    height: 35px;
+    margin: auto; /* Otomatik kenar boşlukları */
+    border: 2px solid #bb1c4d; /* Gözle görülür olması için kenarlık ekliyoruz */
+    background-color: #bb1c4d;
+}
+
+.circle {
+    cursor: pointer;
+    margin: 3px;
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.monthlyCard1,
+.monthlyCard2,
+.monthlyCard3 {
+    margin: auto;
+    width: 400px;
+    height: 650px;
+    background-color: #22252c;
+    display: flex;
+}
+
+.monthly1,
+.monthly2,
+.monthly3 {
+    width: 400px;
+    height: 650px;
+}
+
+
+.monthlyHeader1 {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    h1 {
+        font-family: "Exo 2", sans-serif;
+    }
+    h2 {
+        font-size: 40px;
+        font-family: "Exo 2", sans-serif;
+    }
+}.monthlyHeader2 {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    h1 {
+        font-family: "Exo 2", sans-serif;
+    }
+    h2 {
+        font-size: 40px;
+        font-family: "Exo 2", sans-serif;
+    }
+}
+.monthlyHeader3 {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    h1 {
+        font-family: "Exo 2", sans-serif;
+    }
+    h2 {
+        font-size: 40px;
+        font-family: "Exo 2", sans-serif;
+    }
+}
+
+.monthlyText1,
+.monthlyText2,
+.monthlyText3 {
+    font-family: "Exo 2", sans-serif;
+    list-style-position: outside;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.monthlyText1 ul,
+.monthlyText2 ul,
+.monthlyText3 ul {
+    padding-left: 20px; /* Madde işaretlerinin hizalanması için */
+}
+
+.monthlyText1 li,
+.monthlyText2 li,
+.monthlyText3 li {
+    color: white;
+    margin-bottom: 35px; /* Elemanlar arasındaki boşluk */
+    width: 100%; /* Tam genişlikte hizalama */
+    text-align: left; /* Sol hizalama */
+}
+
+.monthlyText1 li::marker,
+.monthlyText2 li::marker,
+.monthlyText3 li::marker {
+    color: #bb1c4d; /* Madde işaretlerinin rengi */
+}
+
+.monthlyText1 button,
+.monthlyText2 button,
+.monthlyText3 button {
+    margin-top: 10px;
+    width: 250px;
+    height: 65px;
+    background-color: #22252c;
+    border: 1px solid #bb1c4c8a;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: "Exo 2", sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+.monthlyText1 button:hover,
+.monthlyText2 button:hover,
+.monthlyText3 button:hover {
+    background-color: #bb1c4d;
+    border: 1px solid #bb1c4d;
+    transition: 0.5s;
+}
+
+.monthlyText1 button:not(:hover),
+.monthlyText2 button:not(:hover),
+.monthlyText3 button:not(:hover) {
+    transition: 0.5s;
+}
+
+.yearlyCard1,
+.yearlyCard2,
+.yearlyCard3 {
+    margin: auto;
+    width: 400px;
+    height: 650px;
+    background-color: #22252c;
+    display: flex;
+}
+
+.yearly1,
+.yearly2,
+.yearly3 {
+    width: 400px;
+    height: 650px;
+}
+
+
+.yearlyHeader1 {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    h1 {
+        font-family: "Exo 2", sans-serif;
+    }
+    h2 {
+        font-size: 40px;
+        font-family: "Exo 2", sans-serif;
+    }
+}.yearlyHeader2 {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    h1 {
+        font-family: "Exo 2", sans-serif;
+    }
+    h2 {
+        font-size: 40px;
+        font-family: "Exo 2", sans-serif;
+    }
+}
+.yearlyHeader3 {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    h1 {
+        font-family: "Exo 2", sans-serif;
+    }
+    h2 {
+        font-size: 40px;
+        font-family: "Exo 2", sans-serif;
+    }
+}
+
+.yearlyText1,
+.yearlyText2,
+.yearlyText3 {
+    font-family: "Exo 2", sans-serif;
+    list-style-position: outside;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.yearlyText1 ul,
+.yearlyText2 ul,
+.yearlyText3 ul {
+    padding-left: 20px; /* Madde işaretlerinin hizalanması için */
+}
+
+.yearlyText1 li,
+.yearlyText2 li,
+.yearlyText3 li {
+    color: white;
+    margin-bottom: 35px; /* Elemanlar arasındaki boşluk */
+    width: 100%; /* Tam genişlikte hizalama */
+    text-align: left; /* Sol hizalama */
+}
+
+.yearlyText1 li::marker,
+.yearlyText2 li::marker,
+.yearlyText3 li::marker {
+    color: #bb1c4d; /* Madde işaretlerinin rengi */
+}
+
+.yearlyText1 button,
+.yearlyText2 button,
+.yearlyText3 button {
+    margin-top: 10px;
+    width: 250px;
+    height: 65px;
+    background-color: #22252c;
+    border: 1px solid #bb1c4c8a;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: "Exo 2", sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+.yearlyText1 button:hover,
+.yearlyText2 button:hover,
+.yearlyText3 button:hover {
+    background-color: #bb1c4d;
+    border: 1px solid #bb1c4d;
+    transition: 0.5s;
+}
+
+.yearlyText1 button:not(:hover),
+.yearlyText2 button:not(:hover),
+.yearlyText3 button:not(:hover) {
+    transition: 0.5s;
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    display: grid;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeOut {
+    animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
